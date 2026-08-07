@@ -7,7 +7,7 @@ def Error(*Args):
     print(f"\033[31mError: {Args}\033[0m")
 
 print("Mbr Recovery Henrique")
-print("Created by \033[34m@henriqueb\033[0m on TikTok.")
+print("Created by \033[34m@henriquebecke\033[0m on TikTok.")
 
 if not ctypes.windll.shell32.IsUserAnAdmin():
     Error("You need to run as an administrator!")
