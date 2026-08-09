@@ -5,13 +5,13 @@ from sys import argv
 def Error(*Args):
     Args = " ".join(map(str, Args))
     print(f"\033[31mError: {Args}\033[0m")
+    exit(1)
 
 print("Mbr Recovery Henrique")
 print("Created by \033[34m@henriquebecke\033[0m on TikTok.")
 
 if not ctypes.windll.shell32.IsUserAnAdmin():
     Error("You need to run as an administrator!")
-    exit(1)
 
 if len(argv) < 2:
     Error("You need to pass arguments!")
